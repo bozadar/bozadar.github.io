@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Abel", sans-serif;
+}
+
+
+header {
+    display: flex;    
+    color: white;
+    height: 5.3rem;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    border-bottom: 1px solid white;
+    z-index: 1;   
+}
+
+.logo {
+    display: flex;
+    align-items: center;    
+    padding-left: 1.5rem;
+    font-size: 4rem;
+    width: 82%;
+    min-width: 400px;    
+}
+
+.logo-img {
+    width: 3rem;
+    padding-left: 1.5rem;
+    margin-left: .25rem;
+}
+
+.logo-img:hover {
+    transform: rotate(20deg);
+    transition-duration: .75s;
+}
+
+.logo-img:not(:hover){
+    transition-duration: 1s;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.link:hover {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;    
+}
+
+.header-link {
+    display: flex;
+    padding: 0.75rem;    
+    width: 100px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;   
+}
+
+.banner {    
+    height: 650px;
+    background-image: url(/Images/splashimage2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    background-position: 15% 95%;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    margin-top: 5.3rem;
+    margin-bottom: 75px;
+}
+
+.mission-statement {
+    color: white;
+    position: absolute;
+    top: 575px;
+    right: 75px;
+    padding: 25px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 1px solid white;    
+}
+
+.product-container {
+    display: flex;
+    margin-top: 25px;   
+    max-width: 1600px;    
+    margin: 0 auto;
+    justify-content: center;    
+    color: white; 
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    height: auto;   
+}
+
+
+
+.product-image-container {
+    display: flex;
+    flex-direction: column;    
+    text-align: center;
+    align-items: center; 
+    margin: 20px;    
+}
+
+.product-text {
+    width: 300px;
+}
+
+
+.product-image {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border: 1px solid white;
+    margin: 25px;
+}
+
+.product-image:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1140px) {
+    .mission-statement {
+        top: 125px;
+        right: 15%;
+        left: 15%;
+    }    
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        display: block;
+    }   
+    
+    .logo {
+        justify-content: center;
+        margin-left: 32px;
+    }
+    
+    .header-link {
+        display: none;
+    }
+}
